@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/postman", {
+mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
-  useCreateIndex: true,
   useUnifiedTopology: true
 });
-const db = mongoose.connection;
 
-db.on("connected", () => {
-  console.log(`Connected to MongoDB at ${db.host}:${db.port}`);
+mongoose.connection.on("connected", function() {
+  console.log(`mongoose connected to: ${process.env.DATABASE_URL}`);
 });
+
+module.exports = mongoose;
