@@ -1,12 +1,11 @@
 * {
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(153, 204, 204);
 }
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
+nav,
 a {
-  color: #00b7ff;
+  background-color: rgb(62, 104, 104);
+  text-decoration: none;
+  color: white;
 }
