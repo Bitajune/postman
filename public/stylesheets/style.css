@@ -5,7 +5,6 @@
 
 nav,
 a {
-  font-family: "Quicksand", sans-serif;
   background-color: rgb(243, 191, 139);
   text-decoration: none;
   color: white;
@@ -21,4 +20,18 @@ nav > img {
 
 a {
   font-size: 27px;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.linkOne {
+  background-color: rgb(169, 212, 212);
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
+  text-decoration: underline;
 }
