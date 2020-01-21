@@ -1,3 +1,9 @@
-const Categorie = require("../models/categorie");
+const Location = require("../models/location");
 
-module.exports = {};
+const index = (req, res) => {
+  res.render("categories/index");
+};
+
+module.exports = {
+  index
+};
