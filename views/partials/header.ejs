@@ -16,8 +16,11 @@
         class="evnelope-icon"
         style="width:67px;height:40px"
       />
+      <% if (!user) { %>
       <a href="/auth/google"> Login with Google</a>
+      <% } else { %>
       <a href="/logout">Log Out</a>
+      <% } %>
     </nav>
   </head>
 </html>

@@ -1,8 +1,14 @@
 const Location = require("../models/location");
 
 const index = (req, res) => {
-  //find all locations from db. then pass in view in a different key.
-  res.render("locations/index", { title: "list of locations" });
+  Location.find({}, (err, location) => {
+    res.render("locations/index", {
+      title: "List Of Locations",
+      user: req.user,
+      location
+    });
+    console.log(location);
+  });
 };
 
 const newLocation = (req, res) => {

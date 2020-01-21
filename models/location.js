@@ -5,7 +5,8 @@ const locationSchema = new Schema({
   Name: String,
   Address: String,
   Phone: String,
-  Website: String
+  Website: String,
+  Image: String
 });
 
 module.exports = mongoose.model("Location", locationSchema);

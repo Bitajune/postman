@@ -4,7 +4,7 @@ const router = express.Router();
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  res.render("index", { title: "Postman" });
+  res.render("index", { title: "Postman", user: req.user });
 });
 
 router.get(
