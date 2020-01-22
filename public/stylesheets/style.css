@@ -34,6 +34,7 @@ a {
   justify-content: space-evenly;
   font-size: 40px;
   text-decoration: underline;
+  color: rgb(62, 104, 104);
 }
 
 img.envelope {
@@ -46,6 +47,7 @@ img.envelope {
 a.locationsLink {
   background-color: rgb(237, 222, 197);
   text-decoration: underline;
+  color: rgb(62, 104, 104);
 }
 
 .centered {
@@ -61,21 +63,54 @@ a.addLocation {
   display: flex;
   justify-content: center;
   font-size: 40px;
+  color: rgb(62, 104, 104);
 }
 
-a.siteLink {
+h1.locationTitle {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(62, 104, 104);
+}
+
+a.siteLink,
+a.details {
   background-color: rgb(169, 212, 212);
+  color: rgb(62, 104, 104);
   font-size: 20px;
   text-decoration: underline;
   display: flex;
   justify-content: left;
+  padding: 0px;
+  margin-left: 5px;
 }
 
 li {
   font-size: 20px;
+  padding: 3px;
+  margin-left: 20px;
 }
 
-.name {
+h1.name {
   text-decoration: underline;
   margin-bottom: 5px;
+  font-size: 30px;
+  padding: 3px;
+  margin-left: 20px;
+}
+
+img.img {
+  padding: 3px;
+  margin-left: 25px;
+  padding: 1px;
+  border: 1px solid #021a40;
+  background-color: rgb(62, 104, 104);
+}
+
+a.logoutBtn,
+a.loginBtn {
+  color: rgb(193, 87, 43);
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
 }

@@ -1,18 +1,20 @@
 <%- include('../partials/header') %>
 <body>
-  <h1><%= title%></h1>
+  <h1 class="locationTitle"><%= title%></h1>
 
   <ul>
     <% location.forEach(l => { %>
-    <h1 class="name"><%= l.Name %></h1>
+    <h1 class="name">➯<%= l.Name %></h1>
     <img class="img" src="<%= l.Image %>" width="200px" height="200px" />
     <li><%= l.Address %></li>
     <li><%= l.Phone %></li>
+    <li><a class="details" href="/locations/<%= l._id %>">Details</a></li>
     <li>
       <a class="siteLink" href="<%= l.Website%>" target="_blank"
         >Visit Their Site!</a
       >
     </li>
+
     <% }); %>
   </ul>
   <a class="addLocation" href="/locations/new">Add A New Location</a>

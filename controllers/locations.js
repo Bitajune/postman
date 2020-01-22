@@ -7,14 +7,18 @@ const index = (req, res) => {
       user: req.user,
       location
     });
-    console.log(location);
   });
 };
 
 const newLocation = (req, res) => {
-  res.render("locations/new");
+  Location.find({}, (err, location) => {
+    res.render("locations/new", {
+      title: "Add A Location",
+      user: req.user,
+      location
+    });
+  });
 };
-
 const create = (req, res) => {};
 
 module.exports = {
