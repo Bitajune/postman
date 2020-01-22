@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const locationSchema = new Schema({
-  Name: String,
-  Address: String,
-  Phone: String,
-  Website: String,
-  Image: String
+  name: String,
+  address: String,
+  phone: String,
+  website: String,
+  image: String
 });
 
-module.exports = mongoose.model("Location", locationSchema);
+module.exports = mongoose.model("locations", locationSchema);

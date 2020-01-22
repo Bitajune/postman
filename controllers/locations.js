@@ -19,7 +19,13 @@ const newLocation = (req, res) => {
     });
   });
 };
-const create = (req, res) => {};
+const create = (req, res) => {
+  const location = new Location(req.body);
+  location.save(err => {
+    if (err) console.log("error", location);
+    res.redirect("/locations");
+  });
+};
 
 module.exports = {
   index,

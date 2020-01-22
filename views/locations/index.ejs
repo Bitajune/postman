@@ -4,13 +4,17 @@
 
   <ul>
     <% location.forEach(l => { %>
-    <h1 class="name">➯<%= l.Name %></h1>
-    <img class="img" src="<%= l.Image %>" width="200px" height="200px" />
-    <li><%= l.Address %></li>
-    <li><%= l.Phone %></li>
+    <h1 class="name">➯<%= l.name %></h1>
+    <% if (l.image) { %>
+    <img class="img" src="<%= l.image %>" width="200px" height="200px" />
+    <% } else { %>
+    <img src="https://i.imgur.com/XncXzZL.jpg" width="250px" height="180px" />
+    <% } %>
+    <li><%= l.address %></li>
+    <li><%= l.phone %></li>
     <li><a class="details" href="/locations/<%= l._id %>">Details</a></li>
     <li>
-      <a class="siteLink" href="<%= l.Website%>" target="_blank"
+      <a class="siteLink" href="<%= l.website%>" target="_blank"
         >Visit Their Site!</a
       >
     </li>

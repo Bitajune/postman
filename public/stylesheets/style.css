@@ -141,3 +141,9 @@ input#locationBtn {
   margin-left: 60px;
   font-size: 25px;
 }
+
+h3 {
+  color: rgb(62, 104, 104);
+  font-size: 20px;
+  margin-left: 25px;
+}

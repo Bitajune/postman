@@ -6,6 +6,5 @@ const locationsCtrl = require("../controllers/locations");
 router.get("/", locationsCtrl.index);
 router.get("/new", locationsCtrl.new);
 router.post("/", locationsCtrl.create);
-//router.post("/:id", locationsCtrl.create);
 
 module.exports = router;
