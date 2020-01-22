@@ -112,5 +112,32 @@ a.loginBtn {
 }
 
 ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
+}
+
+h1.enterLocation {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(62, 104, 104);
+}
+
+label.label {
+  color: rgb(62, 104, 104);
+  font-size: 40px;
+  margin-left: 25px;
+}
+
+input {
+  text-align: center;
+  font-size: 20px;
+  align-content: center;
+  border-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+input#locationBtn {
+  color: rgb(62, 104, 104);
+  margin-left: 60px;
+  font-size: 25px;
 }
