@@ -1,8 +1,30 @@
 <%- include('../partials/header') %>
 <h1 class="review">Reviews</h1>
-<form action="/locations/reviews/<%= l._id %>"" method="POST">
+<form action="<%= location._id %>"" method="POST">
   <textarea name="content" rows="10" cols="130">Write a review here!</textarea>
   <br />
-  <input class="reviewBtn" type="submit" value="Add Review" /><br />
+  <a class="reviewBtn" href = "<%= location._id %>">Add Review</a><br>
   <a class="goBackReview" href="/locations">Go Back</a>
 </form>
+
+<% if (location.review) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Review</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% location.review.forEach(function(r) { %>
+      <tr>
+        <td><%= Date() %></td>
+        <td><%= r.review %></td>
+
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  <% } else { %>
+  <h3>No Reviews Yet</h3>
+  <% } %>
