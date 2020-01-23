@@ -4,6 +4,7 @@ const create = (req, res) => {
   Location.findById(req.params.id, (err, location) => {
     location.reviews.push(req.body);
     location.save(err => {
+      user: req.user, location;
       res.redirect(`/locations/${location._id}`);
     });
   });

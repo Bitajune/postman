@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 <h1 class="review">Reviews</h1>
-<form action="/locations/reviews/:id" method="POST">
+<form action="/locations/reviews/<%= l._id %>"" method="POST">
   <textarea name="content" rows="10" cols="130">Write a review here!</textarea>
   <br />
   <input class="reviewBtn" type="submit" value="Add Review" /><br />
