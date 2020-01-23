@@ -173,7 +173,15 @@ textarea {
   margin-right: auto;
 }
 
-.goBackReview,
+.goBackReview {
+  background-color: rgb(169, 212, 212);
+  color: rgb(62, 104, 104);
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
 .reviewBtn {
   background-color: rgb(169, 212, 212);
   color: rgb(62, 104, 104);
@@ -181,4 +189,11 @@ textarea {
   justify-content: center;
   font-size: 25px;
   text-decoration: underline;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li.reviewContent {
+  color: rgb(193, 87, 43);
 }

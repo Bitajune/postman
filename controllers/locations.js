@@ -1,4 +1,5 @@
 const Location = require("../models/location");
+const Review = require("../models/review");
 
 const index = (req, res) => {
   Location.find({}, (err, location) => {
@@ -30,14 +31,24 @@ const review = (req, res) => {
   });
 };
 
-const show = (req, res) => {
-  Location.findById(req.params.id, (err, location) => {
-    res.render("locations/show", {
-      title: "Add A Review",
-      user: req.user,
-      location
-    });
+const show = async (req, res) => {
+  const location = await Location.findById(req.params.id).populate("reviews");
+  console.log(location, "this is location");
+  res.render("locations/show", {
+    title: "Add A Review",
+    user: req.user,
+    location
   });
+
+  // const reviews = await Review.find({});
+  // console.log(reviews, "this is reviews");
+  // Location.findById(req.params.id, (err, location) => {
+  //   res.render("locations/show", {
+  //     title: "Add A Review",
+  //     user: req.user,
+  //     location
+  //   });
+  // });
 };
 
 const create = (req, res) => {

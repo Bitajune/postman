@@ -6,16 +6,13 @@ const locationSchema = new Schema({
   address: String,
   phone: String,
   website: String,
-  image: String
+  image: String,
+  reviews: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Review"
+    }
+  ]
 });
-
-const reviewSchema = new Schema(
-  {
-    content: String
-  },
-  {
-    timestamps: true
-  }
-);
 
 module.exports = mongoose.model("Location", locationSchema);
