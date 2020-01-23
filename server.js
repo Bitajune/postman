@@ -14,6 +14,7 @@ require("./config/passport");
 const indexRouter = require("./routes/index");
 const categoriesRouter = require("./routes/categories");
 const locationsRouter = require("./routes/locations");
+const reviewsRouter = require("./routes/reviews");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/categories", categoriesRouter);
 app.use("/locations", locationsRouter);
+app.use("", reviewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

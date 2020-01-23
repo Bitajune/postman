@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
 <h1 class="review">Reviews</h1>
 <form action="/locations/reviews/:id" method="POST">
-  <body>
-    this is my review page
-  </body>
-  <%- include('../partials/footer') %>
+  <textarea name="content" rows="10" cols="130">Write a review here!</textarea>
+  <br />
+  <input class="reviewBtn" type="submit" value="Add Review" /><br />
+  <a class="goBackReview" href="/locations">Go Back</a>
 </form>

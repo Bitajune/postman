@@ -9,4 +9,13 @@ const locationSchema = new Schema({
   image: String
 });
 
-module.exports = mongoose.model("locations", locationSchema);
+const reviewSchema = new Schema(
+  {
+    content: String
+  },
+  {
+    timestamps: true
+  }
+);
+
+module.exports = mongoose.model("Location", locationSchema);

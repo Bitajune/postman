@@ -5,7 +5,6 @@ const locationsCtrl = require("../controllers/locations");
 /* GET users listing. */
 router.get("/", locationsCtrl.index);
 router.get("/new", locationsCtrl.new);
-// router.get("/reviews/:id", locationsCtrl.review);
 router.get("/:id", locationsCtrl.show);
 
 router.post("/", locationsCtrl.create);
