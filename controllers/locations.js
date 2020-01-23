@@ -31,7 +31,7 @@ const review = (req, res) => {
 };
 
 const show = (req, res) => {
-  Location.find({}, (err, location) => {
+  Location.findById(req.params.id).exec((err, location) => {
     res.render("locations/show", {
       title: "Add A Review",
       user: req.user,
