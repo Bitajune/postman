@@ -19,6 +19,27 @@ const newLocation = (req, res) => {
     });
   });
 };
+
+const review = (req, res) => {
+  Location.find({}, (err, location) => {
+    res.render("locations/show", {
+      title: "Add A Review",
+      user: req.user,
+      location
+    });
+  });
+};
+
+const show = (req, res) => {
+  Location.find({}, (err, location) => {
+    res.render("locations/show", {
+      title: "Add A Review",
+      user: req.user,
+      location
+    });
+  });
+};
+
 const create = (req, res) => {
   const location = new Location(req.body);
   location.save(err => {
@@ -30,5 +51,7 @@ const create = (req, res) => {
 module.exports = {
   index,
   new: newLocation,
-  create
+  create,
+  review,
+  show
 };
