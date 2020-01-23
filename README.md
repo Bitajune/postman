@@ -8,4 +8,4 @@
 
 ##### Users will have access to look up these centers, be able to add centers themselves, and leave reviews. With Postman, we can build a community and remind those that feel forgotten, that we haven't forgotten them.
 
-[You can check it out for yourself here](https://Bitajune.github.io/postman)
+[You can check it out for yourself here](https://postman-bita.herokuapp.com/)
