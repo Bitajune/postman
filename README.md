@@ -12,6 +12,15 @@
 
 ![](https://i.imgur.com/ZZPSOUt.png)
 
+### Technical Skills Used:
+
+- HTML
+- CSS
+- NODE.JS
+- MONGOOSE
+- JAVASCRIPT
+- HEROKU
+
 [You can check it out for yourself here](https://postman-bita.herokuapp.com/)
 
-###### \*This project was made with Node.js, Mongoose, JavaScript, CSS, and HTML.
+##### _Original artwork created exclusively for use on this app._
